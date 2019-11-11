@@ -8,4 +8,5 @@ COPY virt-assn1-app /flaskapp
 WORKDIR /flaskapp
 RUN pip3 install -r requirements.txt
 EXPOSE 5000
-CMD ["python", "myproject.py"]
+ENTRYPOINT "./startup.sh"
+#CMD ["python", "myproject.py"]
